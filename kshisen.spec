@@ -1,6 +1,6 @@
 Name:		kshisen
 Version:	4.12.1
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Patience game where you take away all pieces
 Group:		Graphical desktop/KDE

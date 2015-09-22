@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kshisen-15.08.0.tar.xz: 93c84c51a39e3248248623b9000135d8f3765a42
+sources:
+  kshisen-15.08.1.tar.xz: a0d3f69226780aef079314fbb003277b51390734

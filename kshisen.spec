@@ -38,7 +38,8 @@ tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
 %{_datadir}/kxmlgui5/kshisen/kshisenui.rc
 %{_datadir}/config.kcfg/kshisen.kcfg                                                                   
 %{_iconsdir}/hicolor/*/apps/kshisen*                                                                   
-%doc %{_docdir}/*/*/kshisen                                                                            
+%doc %{_docdir}/*/*/kshisen
+%_kde5_datadir/appdata/org.kde.kshisen.appdata.xml
    
 
 #------------------------------------------------------------------------------

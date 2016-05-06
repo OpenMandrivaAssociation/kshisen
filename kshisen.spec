@@ -13,19 +13,18 @@ Requires:	kmahjongglib
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
-BuildRequires:  cmake(KF5CoreAddons)                                                                   
-BuildRequires:  cmake(KF5XmlGui)                                                                       
-BuildRequires:  cmake(KF5Config)                                                                       
-BuildRequires:  cmake(KF5KIO)                                                                          
-BuildRequires:  cmake(KF5DNSSD)                                                                        
-BuildRequires:  cmake(KF5NewStuff)                                                                     
-BuildRequires:  cmake(KF5Declarative)                                                                  
+BuildRequires:  cmake(KF5CoreAddons)
+BuildRequires:  cmake(KF5XmlGui)
+BuildRequires:  cmake(KF5Config)
+BuildRequires:  cmake(KF5Crash)
+BuildRequires:  cmake(KF5KIO)
+BuildRequires:  cmake(KF5DNSSD)
+BuildRequires:  cmake(KF5NewStuff)
+BuildRequires:  cmake(KF5Declarative)
 BuildRequires:  cmake(KF5DocTools)
 BuildRequires:	cmake(KF5KMahjongglib)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(Phonon4Qt5)
-
-
 
 %description
 KShisen is a solitaire-like game played using the standard set of Mahjong

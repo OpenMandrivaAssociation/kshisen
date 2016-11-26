@@ -13,6 +13,7 @@ Requires:	kmahjongglib
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5Test)
 BuildRequires:  cmake(KF5CoreAddons)
 BuildRequires:  cmake(KF5XmlGui)
 BuildRequires:  cmake(KF5Config)
@@ -31,15 +32,14 @@ KShisen is a solitaire-like game played using the standard set of Mahjong
 tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
 
 %files
-%{_bindir}/kshisen                                                                                     
-%{_datadir}/applications/org.kde.kshisen.desktop                                                          
-%{_datadir}/sounds/kshisen   
+%{_bindir}/kshisen
+%{_datadir}/applications/org.kde.kshisen.desktop
+%{_datadir}/sounds/kshisen
 %{_datadir}/kxmlgui5/kshisen/kshisenui.rc
-%{_datadir}/config.kcfg/kshisen.kcfg                                                                   
-%{_iconsdir}/hicolor/*/apps/kshisen*                                                                   
+%{_datadir}/config.kcfg/kshisen.kcfg
+%{_iconsdir}/hicolor/*/apps/kshisen*
 %doc %{_docdir}/*/*/kshisen
-%_kde5_datadir/appdata/org.kde.kshisen.appdata.xml
-   
+%_kde5_datadir/metainfo/org.kde.kshisen.appdata.xml
 
 #------------------------------------------------------------------------------
 

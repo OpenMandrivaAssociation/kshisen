@@ -1,12 +1,13 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kshisen
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	Patience game where you take away all pieces
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=kshisen
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkmahjongg-devel
 Requires:	libkdegames-common
 Requires:	kmahjongglib
@@ -31,14 +32,13 @@ BuildRequires:	cmake(Phonon4Qt5)
 KShisen is a solitaire-like game played using the standard set of Mahjong
 tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
 
-%files
+%files -f %{name}.lang
 %{_bindir}/kshisen
 %{_datadir}/applications/org.kde.kshisen.desktop
 %{_datadir}/sounds/kshisen
 %{_datadir}/kxmlgui5/kshisen/kshisenui.rc
 %{_datadir}/config.kcfg/kshisen.kcfg
 %{_iconsdir}/hicolor/*/apps/kshisen*
-%doc %{_docdir}/*/*/kshisen
 %_kde5_datadir/metainfo/org.kde.kshisen.appdata.xml
 
 #------------------------------------------------------------------------------
@@ -52,4 +52,4 @@ tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
 
 %install
 %ninja_install -C build
-
+%find_lang %{name} --with-html

@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kshisen
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Epoch:		1
 Summary:	Patience game where you take away all pieces
@@ -34,7 +34,7 @@ KShisen is a solitaire-like game played using the standard set of Mahjong
 tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/kshisen.categories
+%{_datadir}/qlogging-categories5/kshisen.categories
 %{_bindir}/kshisen
 %{_datadir}/applications/org.kde.kshisen.desktop
 %{_datadir}/sounds/kshisen

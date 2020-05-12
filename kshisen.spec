@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kshisen
-Version:	20.04.0
+Version:	20.04.1
 Release:	1
 Epoch:		1
 Summary:	Patience game where you take away all pieces

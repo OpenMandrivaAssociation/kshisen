@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kshisen
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Epoch:		1
 Summary:	Patience game where you take away all pieces
@@ -38,7 +38,6 @@ tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
 %{_bindir}/kshisen
 %{_datadir}/applications/org.kde.kshisen.desktop
 %{_datadir}/sounds/kshisen
-%{_datadir}/kxmlgui5/kshisen/kshisenui.rc
 %{_datadir}/config.kcfg/kshisen.kcfg
 %{_iconsdir}/hicolor/*/apps/kshisen*
 %_kde5_datadir/metainfo/org.kde.kshisen.appdata.xml

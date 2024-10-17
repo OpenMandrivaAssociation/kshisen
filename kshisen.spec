@@ -6,7 +6,7 @@ Epoch:		1
 Summary:	Patience game where you take away all pieces
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=kshisen
+URL:		https://games.kde.org/game.php?game=kshisen
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkmahjongg-devel
 Requires:	libkdegames-common

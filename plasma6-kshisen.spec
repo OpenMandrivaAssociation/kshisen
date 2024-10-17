@@ -8,7 +8,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	Patience game where you take away all pieces
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=kshisen
+URL:		https://games.kde.org/game.php?game=kshisen
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/kshisen/-/archive/%{gitbranch}/kshisen-%{gitbranchd}.tar.bz2#/kshisen-%{git}.tar.bz2
 %else

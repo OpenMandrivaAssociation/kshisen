@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kshisen
-Version:	25.04.3
+Version:	25.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Patience game where you take away all pieces
 Group:		Graphical desktop/KDE
